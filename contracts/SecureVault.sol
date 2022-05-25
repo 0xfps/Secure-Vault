@@ -10,7 +10,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 * @author: Anthony (fps) https://github.com/fps8k .
 * @dev: 
 * 
-* A safe vault, that allows the owner to deploy an dave some ether for some time.
+* A safe and secure vault, that allows the owner to deploy an save some ether for some time.
 */
 
 contract SecureVault
@@ -25,10 +25,10 @@ contract SecureVault
     uint256 private total_funds;
 
     // Default timespan constant for Rinkeby.
-    // uint256 constant DEFAULT_DURATION = 7 days;
+    uint256 constant DEFAULT_DURATION = 7 days;
 
     // Default timespan for Ganache.
-    uint256 constant DEFAULT_DURATION = 60 seconds;
+    // uint256 constant DEFAULT_DURATION = 60 seconds;
 
     // Variable time for the user to add to the contract;
     uint256 public duration;
@@ -116,7 +116,7 @@ contract SecureVault
     *
     * Adds more funds to the vault, this increases the vaults duration by some time, the default duration.
     */
-    function deposit() public payable onlyOwner noReEntrance
+    function deposit() public payable onlyOwner
     {
         // Use SafeMath to add the msg.value to the total_funds.
         total_funds = total_funds.add(msg.value);
