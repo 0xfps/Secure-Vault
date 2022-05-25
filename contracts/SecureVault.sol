@@ -10,7 +10,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 * @author: Anthony (fps) https://github.com/fps8k .
 * @dev: 
 * 
-* A safe vault, that allows the owner to deploy an dave some ether for some time.
+* A safe and secure vault, that allows the owner to deploy an save some ether for some time.
 */
 
 contract SecureVault
