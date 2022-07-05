@@ -16,5 +16,3 @@ After going through 3 smart contract security techniques so far, I tried to writ
 - Forced ether.
 
 ###
-
-Anthony
