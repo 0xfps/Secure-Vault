@@ -5,7 +5,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 
 /*
 * title Secure Vault.
-* @author Anthony (fps) https://github.com/fps8k .
+* @author Anthony (fps) https://github.com/0xfps.
 * @dev A safe and secure vault, that allows the owner save some ether for some time.
 */
 contract SecureVault {
